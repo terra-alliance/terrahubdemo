@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/lunc.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="terra-wallet" />
+  <meta name="description" content="Terra Classic wallet, information and hub." />
+
+  <title>Terra Classic Hub</title>
+
+  <style>
+    body {
+      margin: 0;
+    }
+
+    @property --Color {
+      syntax: '<color>';
+      initial-value: hsl(45, 100%, 10%);
+      inherits: false;
+    }
+
+    .wallet {
+      --Color: hsl(45, 100%, 10%);
+    }
+
+    .learn {
+      --Color: hsl(180, 100%, 10%);
+    }
+
+    .ecosystem {
+      --Color: hsl(300, 100%, 10%);
+    }
+
+    .explore {
+      --Color: hsl(200, 100%, 10%);
+    }
+  </style>
+
+  <script type="module">
+    import { Buffer } from "buffer"
+
+    window.Buffer = Buffer
+    document.addEventListener('contextmenu', event => event.preventDefault())
+  </script>
+
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
+    data-cf-beacon='{"token": "c2b36afa45f7432398167de2fbf72b90"}'></script>
+
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
